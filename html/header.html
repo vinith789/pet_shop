@@ -1,0 +1,76 @@
+<header>
+  <nav class="p-5 bg-gradient-to-r from-rose-300 to-blue-400 shadow md:flex md:items-center md:justify-between">
+
+    <div>
+        <span class="text-2xl font-serif cursor-pointer">
+          <img
+          class="h-8 inline bg-transparen"
+          src="../src/images/logo/logo.png" alt="logo">
+          PetShop
+        </span>
+    </div>
+
+    <div class="text-center">
+      <ul class="md:flex md:items-center">
+          <li class="mx-4 my-6 md:my-0 ">
+            <a
+              class="text-xl hover:text-white duration-150 active"
+              href="../php/main.php"
+            >Home</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0 ">
+            <a
+              class="text-xl hover:text-white duration-150 active:"
+              href="../pages/bird.php"
+            >Birds</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0 ">
+            <a
+              class="text-xl hover:text-white duration-150"
+              href="../pages/dogs.php"
+            >Dogs</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0 ">
+            <a
+              class="text-xl hover:text-white duration-150"
+              href="../pages/fishs.php"
+            >Fishs</a>
+          </li>
+
+          <li class="mx-4 my-6 md:my-0 ">
+            <a
+              class="text-xl hover:text-white duration-150"
+              href="../admin/cart.php"
+            >cart</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0 ">
+            <a
+              class="text-xl hover:text-white duration-150"
+              href="../pages/about.php"
+            >About</a>
+          </li>
+      </ul>
+    </div>
+
+    <div class="text-center">
+      <button class="bg-green-800 text-white font-serif duration-500 px-6 py-2 mx-2 hover:bg-green-500 rounded" onclick="myFunction()">
+          <a href="../users/login.php">Login</a>
+      </button>
+
+      <button class="bg-red-500 text-white font-serif duration-500 px-6 py-2 mx-2 hover:bg-red-400 rounded" id="logout">
+          <a href="../users/login.php">Logout</a>
+      </button>
+    </div>
+
+  </nav>
+</header>
+<script>
+  function myFunction() {
+    var x = document.getElementById("login");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+}
+</script>
